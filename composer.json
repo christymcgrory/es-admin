@@ -1,5 +1,5 @@
 {
-    "name": "alleyinteractive/es-admin",
+    "name": "christymcgrory/es-admin",
     "description": "A drop in for Jetpack powered elastic search.",
     "type": "library",
     "license": "GPLv2",
