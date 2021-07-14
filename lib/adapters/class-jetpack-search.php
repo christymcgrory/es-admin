@@ -99,6 +99,8 @@ class Jetpack_Search extends Adapter {
 		if ( is_wp_error($results) ){
            echo $results->get_error_message();
         }
+		echo 'Test';
+		echo $results;
 		// Nest the hits one more level.
 		$results['results']['hits'] = [
 			'hits' => $results['results']['hits'],
