@@ -96,7 +96,9 @@ class Jetpack_Search extends Adapter {
 	 * @return array
 	 */
 	public function filter_es_admin_results( $results ) {
-
+		if ( is_wp_error($results) ){
+           echo $results->get_error_message();
+        }
 		// Nest the hits one more level.
 		$results['results']['hits'] = [
 			'hits' => $results['results']['hits'],
